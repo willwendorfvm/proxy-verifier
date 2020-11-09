@@ -73,7 +73,7 @@ TEST_CASE("RuleChecks of non-duplicate fields", "[RuleCheck]")
 
   SECTION("contains checks")
   {
-    swoc::TextView contained_value("V");
+    swoc::TextView contained_value("Val");
     std::shared_ptr<RuleCheck> contains_check =
         RuleCheck::make_rule_check(test_name, contained_value, "contains");
     REQUIRE(contains_check);
